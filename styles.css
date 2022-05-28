@@ -1,10 +1,12 @@
-h1 {
+body{
     text-align: center;
+}
+
+h1 {
     color: violet;
 }
 
 h2 {
-    text-align: center;
     border: 1px solid violet;
     padding: 15px;
     line-height: 50px;
@@ -13,8 +15,6 @@ h2 {
 }
 
 img {
-    display: block;
-    margin: 0 auto;
     max-width: 100%;
     border-radius: 10px;
 }
@@ -44,6 +44,15 @@ button:hover {
     background: white;
 }
 
+a {
+    color: palevioletred;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
 .container {
     max-width: 600px;
     margin: 0 auto;
@@ -54,16 +63,21 @@ button:hover {
     display: block;
     margin-top: 10px;
     text-decoration: none;
-    color: palevioletred;
     font-size: 14px;
     margin: 20px 0 10px;
-
 }
 
-.learn-more:hover {
-    text-decoration: underline;
-}
+@media (max-width: 900px) {
+    h1{
+        font-size: 20px;
+    }
+    
+    h2{
+        font-size: 16px;
+    }
 
-.footer {
-    text-align: center;
+    button{
+        padding: 10px auto;
+        font-size: 16px;
+    }
 }
