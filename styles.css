@@ -1,13 +1,17 @@
+:root{
+    --primary-color: #f2a5ea;
+}
+
 body{
     text-align: center;
 }
 
 h1 {
-    color: violet;
+    color: var(--primary-color);
 }
 
 h2 {
-    border: 1px solid violet;
+    border: 1px solid var(--primary-color);
     padding: 15px;
     line-height: 50px;
     font-size: 18px;
@@ -27,12 +31,12 @@ p {
 button {
     display: block;
     margin: 20px auto;
-    background: lightpink;
+    background: var(--primary-color);
     font-size: 20px;
     padding: 15px 20px;
     border: none;
     border-radius: 10px;
-    color: navy;
+    color: white;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     transition: all 200ms ease-in-out;
 }
@@ -40,7 +44,7 @@ button {
 button:hover {
     opacity: 0.9;
     cursor: pointer;
-    color: lightpink;
+    color: var(--primary-color);
     background: white;
 }
 
